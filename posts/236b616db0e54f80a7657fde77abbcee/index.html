@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>手机热点密码怎么找？忘了还能重置＋分享</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+.layout{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:38px;padding:24px 30px 38px}
+.media{min-width:0;align-self:start;position:sticky;top:20px}.gallery{width:100%}.stage{position:relative;aspect-ratio:3/4;background:#e9eef1;overflow:hidden;border-radius:10px;max-height:calc(100vh - 116px);margin:0 auto}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.slide.is-active{display:flex}.slide img{height:100%;width:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.counter{position:absolute;top:15px;right:15px;background:#263746ad;color:#fff;font-size:13px;border-radius:20px;padding:6px 12px;z-index:2}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:#1e293ba8;color:#fff;width:40px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s}.nav:hover,.nav:focus-visible{background:#162231e3}.nav:focus-visible,.dot:focus-visible{outline:3px solid #0b83e6;outline-offset:2px}.prev{left:9px}.next{right:9px}
+.gallery-bottom{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 6px}.hint{font-size:12px;color:#7b8895}.dots{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.dot{height:7px;width:7px;border:0;border-radius:50%;padding:0;background:#cbd5df}.dot.is-active{width:21px;border-radius:8px;background:#1d9767}
+.copy{min-width:0;max-height:none;padding:12px 12px 40px 0}.category{font-size:13px;color:#24856d;margin:0 0 12px}.copy h1{font-size:clamp(24px,2.1vw,32px);line-height:1.4;margin:0 0 25px;font-weight:750;overflow-wrap:anywhere}.article{font-size:17px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:.1px}
+.footer{color:#8b939c;font-size:12px;border-top:1px solid #e2e7ea;margin-top:36px;padding-top:16px}.empty-photo{aspect-ratio:3/4;background:#e9eef1;border-radius:10px;display:grid;place-items:center;color:#82919e}
+@media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
+</style></head><body>
+<main class="layout">
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-4e9691c8fce4.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-402ad21a2256.png" alt="第 2 张图文图片" loading="lazy" draggable="false"></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-33db3950d7c9.png" alt="第 3 张图文图片" loading="lazy" draggable="false"></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-e77877f54073.png" alt="第 4 张图文图片" loading="lazy" draggable="false"></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>手机热点密码怎么找？忘了还能重置＋分享</h1><article class="article">上周出差住酒店，同事问我热点密码，我愣了半天——开了几年热点，密码早忘了。翻遍手机也没找到入口，后来发现答案都藏在设置里，苹果安卓还不一样。这篇把热点密码怎么找、忘了怎么重置、怎么分享集中简述。
+ㅤ
+热点密码在哪儿看
+自己手机开的热点，密码都在热点设置页面。安卓打开设置，找到移动网络或个人热点，点进去就能看到热点名称和密码，多数机型密码以小圆点显示，旁边有眼睛图标，点一下就能看到明文。苹果在设置里点个人热点，无线局域网密码就在页面上。
+ㅤ
+密码忘了怎么重置
+实在想不起来就直接改。安卓在热点设置页面找到设置热点密码，输入新密码保存即可；苹果在个人热点页面点无线局域网密码，删掉旧的输入新的，热点重开一次就生效。新密码建议字母加数字组合，长度八位以上，别用生日手机号这种好猜的。
+ㅤ
+连上了怎么把密码给别人
+安卓连着热点时，在设置里点当前WiFi选分享，生成二维码让对方扫码，不用念密码。苹果在已连接WiFi的详情页点密码栏，验证面容或设备密码就能看到，还能直接拷贝发给对方。
+ㅤ
+苹果看已连WiFi密码
+进入设置里的无线局域网，点当前网络右侧的信息图标，再点密码栏，验证一下就显示了。
+ㅤ
+安卓查看热点密码
+入口都在设置里的热点与网络共享或个人热点下，不同品牌叫法略有差别，找不到就在顶部搜索框输入热点两个字。
+ㅤ
+热点密码这几个问题都能在设置里解决，找不到入口时记得用搜索功能。密码给熟人前留意别被截图外传。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+</main>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  if (!slides.length) return;
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var counter = document.getElementById('counter');
+  var stage = document.getElementById('stage');
+  var current = 0;
+  function go(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); slide.setAttribute('aria-hidden', String(i !== current)); });
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+    counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+  document.getElementById('prev').addEventListener('click', function () { go(current - 1); });
+  document.getElementById('next').addEventListener('click', function () { go(current + 1); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { go(i); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(current - 1); if (e.key === 'ArrowRight') go(current + 1); });
+  var startX = null, startY = null;
+  stage.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; } }, {passive:true});
+  stage.addEventListener('touchend', function (e) { if (startX === null || !e.changedTouches.length) return; var dx=e.changedTouches[0].clientX-startX, dy=e.changedTouches[0].clientY-startY; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.25) go(current+(dx<0?1:-1)); startX=null; startY=null; }, {passive:true});
+  go(0);
+}());
+</script>
+</body></html>
