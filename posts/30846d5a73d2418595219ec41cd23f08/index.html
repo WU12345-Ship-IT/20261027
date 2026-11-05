@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>西红柿炒鸡蛋，火候是关键，鸡蛋嫩不嫩全看这一步</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+.layout{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:38px;padding:24px 30px 38px}
+.media{min-width:0;align-self:start;position:sticky;top:20px}.gallery{width:100%}.stage{position:relative;aspect-ratio:3/4;background:#e9eef1;overflow:hidden;border-radius:10px;max-height:calc(100vh - 116px);margin:0 auto}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.slide.is-active{display:flex}.slide img{height:100%;width:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.size-badge{position:absolute;z-index:3;top:10px;left:10px;background:#64748be8;color:#fff;border:2px solid white;border-radius:8px;text-align:center;padding:7px 10px;font-weight:700;font-size:16px;line-height:1.35;box-shadow:0 2px 8px #0002}.size-badge.ok{background:#21c776}.size-badge.warn{background:#ef8a27}.size-badge.error{background:#d94848}.size-badge .dim{display:block;font-weight:500;font-size:11px;margin-top:2px}.counter{position:absolute;top:15px;right:15px;background:#263746ad;color:#fff;font-size:13px;border-radius:20px;padding:6px 12px;z-index:2}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:#1e293ba8;color:#fff;width:40px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s}.nav:hover,.nav:focus-visible{background:#162231e3}.nav:focus-visible,.dot:focus-visible{outline:3px solid #0b83e6;outline-offset:2px}.prev{left:9px}.next{right:9px}
+.gallery-bottom{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 6px}.hint{font-size:12px;color:#7b8895}.dots{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.dot{height:7px;width:7px;border:0;border-radius:50%;padding:0;background:#cbd5df}.dot.is-active{width:21px;border-radius:8px;background:#1d9767}
+.copy{min-width:0;max-height:none;padding:12px 12px 40px 0}.category{font-size:13px;color:#24856d;margin:0 0 12px}.copy h1{font-size:clamp(24px,2.1vw,32px);line-height:1.4;margin:0 0 25px;font-weight:750;overflow-wrap:anywhere}.article{font-size:17px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:.1px}
+.punct-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 22px;background:#eef4f8;padding:10px 12px;border-radius:9px;font-size:13px}.punct-toolbar button{border:1px solid #bbcdd8;background:white;border-radius:6px;padding:6px 10px}.punct-issue{background:#fff0aa;color:#7a3500;border-bottom:2px solid #e08722;border-radius:2px;padding:0 1px}.punct-issue:focus{outline:2px solid #aa5500}.footer{color:#8b939c;font-size:12px;border-top:1px solid #e2e7ea;margin-top:36px;padding-top:16px}.empty-photo{aspect-ratio:3/4;background:#e9eef1;border-radius:10px;display:grid;place-items:center;color:#82919e}
+@media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
+</style></head><body>
+<main class="layout">
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-7e5831c8ae07.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-8d8ee98b4c99.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-d325f4e62ac0.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-5b63d2609a46.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>西红柿炒鸡蛋，火候是关键，鸡蛋嫩不嫩全看这一步</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">做这道菜我翻过不少车，鸡蛋炒老、汤汁寡淡、西红柿酸得皱眉，都经历过。后来慢慢琢磨，发现问题多半出在火候和顺序上，跟调料关系不大。下面把我自己捋顺的做法记下来，给同样在家做饭的朋友做个参考。
+
+鸡蛋要嫩，油温和出锅时机都得盯住
+
+鸡蛋打散时加一点点盐，锅先烧热再倒油，等油面微微波动、手放在锅上方能感到明显热气时再下蛋液，然后转中小火。底部微微定型就用筷子划散，炒到七八成熟立刻盛出，大概一分半钟。油温太低下锅鸡蛋容易吸油发腻，炒太久又会发干发硬，这两点我都踩过。
+
+西红柿要出汁，糖和盐的时机别弄反
+
+葱白爆香后倒西红柿块，中火翻炒两分钟左右，汁水偏少就加两三勺清水。这时候放一小勺白糖，只为中和酸味提鲜，尝不出甜味才对。盐一定留到最后放，放早了西红柿出水过多，汤汁变寡淡，果肉也容易塌软。喜欢拌饭就多炒一会儿把果肉炒碎，喜欢块状口感就缩短时间。
+
+鸡蛋回锅只翻三十秒，别久煮
+
+西红柿熬出浓稠汤汁后，把鸡蛋倒回去轻轻翻拌三十秒，让蛋块裹上汤汁就够。鸡蛋长时间和西红柿一起煮，口感会发硬，前面提前盛出的意义就在这里。最后加盐调味，撒葱绿翻两下关火出锅。
+
+这道菜没什么复杂调料，靠的就是食材本身的味道和几个火候细节。一碗热米饭浇上去，简单踏实，属于隔几天就想做一次的家常味道。上面是我自己做饭的习惯，口味和灶具不同，大家按实际情况调整就好。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+</main>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var counter = document.getElementById('counter');
+  var stage = document.getElementById('stage');
+  var current = 0;
+  function go(index) {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); slide.setAttribute('aria-hidden', String(i !== current)); });
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+    if (counter) counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+  if (slides.length) document.getElementById('prev').addEventListener('click', function () { go(current - 1); });
+  if (slides.length) document.getElementById('next').addEventListener('click', function () { go(current + 1); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { go(i); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(current - 1); if (e.key === 'ArrowRight') go(current + 1); });
+  var startX = null, startY = null;
+  if (stage) stage.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; } }, {passive:true});
+  if (stage) stage.addEventListener('touchend', function (e) { if (startX === null || !e.changedTouches.length) return; var dx=e.changedTouches[0].clientX-startX, dy=e.changedTouches[0].clientY-startY; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.25) go(current+(dx<0?1:-1)); startX=null; startY=null; }, {passive:true});
+  // Real pixel dimensions are obtained from each loaded image, not a fixed label.
+  slides.forEach(function(slide) {
+    var img = slide.querySelector('img');
+    var badge = slide.querySelector('.size-badge');
+    function inspect() {
+      var w=img.naturalWidth, h=img.naturalHeight;
+      if (!w || !h) { badge.className='size-badge error'; badge.textContent='图片读取失败'; return; }
+      var exact=(w===1086 && h===1448);
+      var ratio=(w*4===h*3);
+      badge.className='size-badge '+(exact?'ok':ratio?'warn':'error');
+      badge.textContent=ratio?'3:4':'非3:4';
+      var detail=document.createElement('span'); detail.className='dim';
+      detail.textContent=w+' × '+h+(exact?' · 标准尺寸':ratio?' · 比例正确，尺寸非1086×1448':' · 比例不符');
+      badge.appendChild(detail);
+    }
+    if (img.complete && img.naturalWidth) inspect();
+    img.addEventListener('load',inspect,{once:true}); img.addEventListener('error',inspect,{once:true});
+  });
+  // Heuristic detection: only ASCII punctuation near Chinese writing. No automatic edits.
+  var article=document.getElementById('article');
+  var raw=article.textContent || '';
+  var matches=[];
+  var chinese=/[\u3400-\u9fff]/;
+  var fullMap={',':'，','.':'。',':':'：',';':'；','?':'？','!':'！','(':'（',')':'）'};
+  for(var k=0;k<raw.length;k++) {
+    var ch=raw[k], before=raw[k-1]||'', after=raw[k+1]||'';
+    if(!Object.prototype.hasOwnProperty.call(fullMap,ch)) continue;
+    // Skip numbers, decimals, obvious URLs, Latin abbreviations and file suffixes.
+    if(/[0-9A-Za-z]/.test(before) && /[0-9A-Za-z]/.test(after)) continue;
+    if(/[0-9]/.test(before) && /[0-9]/.test(after)) continue;
+    var nearby=raw.slice(Math.max(0,k-7),Math.min(raw.length,k+8));
+    if(!chinese.test(nearby)) continue;
+    if(ch==='.' && /[A-Za-z0-9]/.test(after)) continue;
+    if(ch===':' && after==='/' && raw[k+2]==='/') continue;
+    matches.push({at:k,from:ch,to:fullMap[ch]});
+  }
+  if(matches.length) {
+    var frag=document.createDocumentFragment(),last=0;
+    matches.forEach(function(m,i) {
+      frag.appendChild(document.createTextNode(raw.slice(last,m.at)));
+      var mark=document.createElement('mark');mark.className='punct-issue';
+      mark.title='半角 '+m.from+'，建议检查是否改为 '+m.to;
+      mark.textContent=m.from; mark.tabIndex=0; mark.setAttribute('data-issue',String(i));
+      frag.appendChild(mark); last=m.at+1;
+    });
+    frag.appendChild(document.createTextNode(raw.slice(last)));
+    article.textContent=''; article.appendChild(frag);
+  }
+  var count=document.getElementById('punctCount');
+  count.textContent=matches.length?'发现 '+matches.length+' 处疑似半角标点（已标黄）':'未发现常见中文半角标点问题';
+  var nextButton=document.getElementById('punctNext');
+  nextButton.disabled=!matches.length;
+  var nextIndex=0;
+  nextButton.addEventListener('click',function() {
+    var issue=article.querySelectorAll('.punct-issue')[nextIndex];
+    if(issue){issue.scrollIntoView({behavior:'smooth',block:'center'});issue.focus({preventScroll:true});}
+    nextIndex=(nextIndex+1)%matches.length;
+  });
+  if (slides.length) go(0);
+}());
+</script>
+</body></html>
