@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>买二手车别急着交钱，先盯住三处，免得事后拍大腿</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+.layout{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:38px;padding:24px 30px 38px}
+.media{min-width:0;align-self:start;position:sticky;top:20px}.gallery{width:100%}.stage{position:relative;aspect-ratio:3/4;background:#e9eef1;overflow:hidden;border-radius:10px;max-height:calc(100vh - 116px);margin:0 auto}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.slide.is-active{display:flex}.slide img{height:100%;width:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.size-badge{position:absolute;z-index:3;top:10px;left:10px;background:#64748be8;color:#fff;border:2px solid white;border-radius:8px;text-align:center;padding:7px 10px;font-weight:700;font-size:16px;line-height:1.35;box-shadow:0 2px 8px #0002}.size-badge.ok{background:#21c776}.size-badge.warn{background:#ef8a27}.size-badge.error{background:#d94848}.size-badge .dim{display:block;font-weight:500;font-size:11px;margin-top:2px}.counter{position:absolute;top:15px;right:15px;background:#263746ad;color:#fff;font-size:13px;border-radius:20px;padding:6px 12px;z-index:2}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:#1e293ba8;color:#fff;width:40px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s}.nav:hover,.nav:focus-visible{background:#162231e3}.nav:focus-visible,.dot:focus-visible{outline:3px solid #0b83e6;outline-offset:2px}.prev{left:9px}.next{right:9px}
+.gallery-bottom{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 6px}.hint{font-size:12px;color:#7b8895}.dots{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.dot{height:7px;width:7px;border:0;border-radius:50%;padding:0;background:#cbd5df}.dot.is-active{width:21px;border-radius:8px;background:#1d9767}
+.copy{min-width:0;max-height:none;padding:12px 12px 40px 0}.category{font-size:13px;color:#24856d;margin:0 0 12px}.copy h1{font-size:clamp(24px,2.1vw,32px);line-height:1.4;margin:0 0 25px;font-weight:750;overflow-wrap:anywhere}.article{font-size:17px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:.1px}
+.punct-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 22px;background:#eef4f8;padding:10px 12px;border-radius:9px;font-size:13px}.punct-toolbar button{border:1px solid #bbcdd8;background:white;border-radius:6px;padding:6px 10px}.punct-issue{background:#fff0aa;color:#7a3500;border-bottom:2px solid #e08722;border-radius:2px;padding:0 1px}.punct-issue:focus{outline:2px solid #aa5500}.footer{color:#8b939c;font-size:12px;border-top:1px solid #e2e7ea;margin-top:36px;padding-top:16px}.empty-photo{aspect-ratio:3/4;background:#e9eef1;border-radius:10px;display:grid;place-items:center;color:#82919e}
+@media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
+</style></head><body>
+<main class="layout">
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-005560667fbd.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-c74eaf48cde3.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-3e0be3185e19.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-c0927741ef0f.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>买二手车别急着交钱，先盯住三处，免得事后拍大腿</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">        去年陪朋友去看一辆二手卡罗拉，车商拍着胸脯说 “原版原漆、实表六万”。朋友差点当场转定金，我多嘴问了句能不能调取保养记录，对方脸色立马变了。后来查询发现这台车存在调表情况，实际里程接近十五万。普通人攒几万块不容易，买二手车最怕辛苦积蓄落到一台车况不明的车上。
+        先看手续再看车
+
+很多人一拉开车门就急于体验车辆，其实优先要核对全套证件资料。机动车登记证书、行驶证上面的车架号、发动机号要和实车完全匹配，信息存在出入就不要再继续洽谈。如果出面交易的不是登记车主本人，拿不出正规授权文件，直接放弃交易。需要分清 “定金” 和 “订金”，宝盖头的定金具备担保效力，买方单方面反悔，商家有权不予退还；言字旁的订金属于预付款，可以要求退回。没有完成验车、调取完整记录前，不要签署带有 “定金” 字样单据。合同里出现 “按现状交付”“里程概不负责” 这类格式免责条款，即便部分格式条款法律层面可认定无效，但依然建议要求划除，把无重大事故、无泡水、无调表等卖方承诺落实到书面文字中中国法院网。
+       车况靠眼睛和手，别靠耳朵
+
+车商介绍时大多不会主动提及车辆问题，车况需要自己逐项排查。把安全带完全拉到底，如果根部留存水渍、霉斑，泡水嫌疑很大。蹲下查看刹车踏板金属杆、座椅滑轨，出现成片异常锈蚀，不要简单归因为环境受潮中国经济网。打开发动机舱观察螺丝，原厂螺丝漆面完整，出现拧动、掉漆痕迹，就要追问拆解维修原因。阳光下斜向观察漆面，局部反光不一致、边缘有毛刺感，大概率重新喷过漆。轮胎、玻璃生产日期正常应早于整车出厂时间，单块玻璃日期明显晚于出厂，要警惕碰撞更换的情况，轮胎单独更换属于正常维护，需要区分看待有驾。自身没有判断能力的话，花几百元委托第三方机构上门检测，远低于后期维修的潜在开销。
+        新能源多查一层，试驾别糊弄
+
+如今选购二手电车、混动车的人越来越多，除常规车况，还要留意数字权限与电池相关风险。交易当场务必让原车主退出解绑车机账号，完成所有权移交，避免原车主还保留远程定位、控车权限。如果车辆采用电池租赁模式，一定要致电品牌官方确认租金全部结清，相关欠费会跟随车辆转移，不要替前任车主承担债务。试驾不要只在场地短途绕行，尽量走包含颠簸路面的路线，留意底盘有无松散异响；冷车启动观察怠速稳定性，急加速感受动力、变速箱换挡是否平顺。商家所有口头承诺，包含保养情况、质保范围、过户时限，全部补充写入合同附件。转账备注写清购车用途，完整留存全部聊天沟通记录。
+
+说到底，普通人买二手车没有取巧的捷径，就是多提问、多实地查看，不要被限时优惠这类话术催促下单。车子是用来日常使用的，不是用来不停维修的。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+</main>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var counter = document.getElementById('counter');
+  var stage = document.getElementById('stage');
+  var current = 0;
+  function go(index) {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); slide.setAttribute('aria-hidden', String(i !== current)); });
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+    if (counter) counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+  if (slides.length) document.getElementById('prev').addEventListener('click', function () { go(current - 1); });
+  if (slides.length) document.getElementById('next').addEventListener('click', function () { go(current + 1); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { go(i); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(current - 1); if (e.key === 'ArrowRight') go(current + 1); });
+  var startX = null, startY = null;
+  if (stage) stage.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; } }, {passive:true});
+  if (stage) stage.addEventListener('touchend', function (e) { if (startX === null || !e.changedTouches.length) return; var dx=e.changedTouches[0].clientX-startX, dy=e.changedTouches[0].clientY-startY; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.25) go(current+(dx<0?1:-1)); startX=null; startY=null; }, {passive:true});
+  // Real pixel dimensions are obtained from each loaded image, not a fixed label.
+  slides.forEach(function(slide) {
+    var img = slide.querySelector('img');
+    var badge = slide.querySelector('.size-badge');
+    function inspect() {
+      var w=img.naturalWidth, h=img.naturalHeight;
+      if (!w || !h) { badge.className='size-badge error'; badge.textContent='图片读取失败'; return; }
+      var exact=(w===1086 && h===1448);
+      var ratio=(w*4===h*3);
+      badge.className='size-badge '+(exact?'ok':ratio?'warn':'error');
+      badge.textContent=ratio?'3:4':'非3:4';
+      var detail=document.createElement('span'); detail.className='dim';
+      detail.textContent=w+' × '+h+(exact?' · 标准尺寸':ratio?' · 比例正确，尺寸非1086×1448':' · 比例不符');
+      badge.appendChild(detail);
+    }
+    if (img.complete && img.naturalWidth) inspect();
+    img.addEventListener('load',inspect,{once:true}); img.addEventListener('error',inspect,{once:true});
+  });
+  // Heuristic detection: only ASCII punctuation near Chinese writing. No automatic edits.
+  var article=document.getElementById('article');
+  var raw=article.textContent || '';
+  var matches=[];
+  var chinese=/[\u3400-\u9fff]/;
+  var fullMap={',':'，','.':'。',':':'：',';':'；','?':'？','!':'！','(':'（',')':'）'};
+  for(var k=0;k<raw.length;k++) {
+    var ch=raw[k], before=raw[k-1]||'', after=raw[k+1]||'';
+    if(!Object.prototype.hasOwnProperty.call(fullMap,ch)) continue;
+    // Skip numbers, decimals, obvious URLs, Latin abbreviations and file suffixes.
+    if(/[0-9A-Za-z]/.test(before) && /[0-9A-Za-z]/.test(after)) continue;
+    if(/[0-9]/.test(before) && /[0-9]/.test(after)) continue;
+    var nearby=raw.slice(Math.max(0,k-7),Math.min(raw.length,k+8));
+    if(!chinese.test(nearby)) continue;
+    if(ch==='.' && /[A-Za-z0-9]/.test(after)) continue;
+    if(ch===':' && after==='/' && raw[k+2]==='/') continue;
+    matches.push({at:k,from:ch,to:fullMap[ch]});
+  }
+  if(matches.length) {
+    var frag=document.createDocumentFragment(),last=0;
+    matches.forEach(function(m,i) {
+      frag.appendChild(document.createTextNode(raw.slice(last,m.at)));
+      var mark=document.createElement('mark');mark.className='punct-issue';
+      mark.title='半角 '+m.from+'，建议检查是否改为 '+m.to;
+      mark.textContent=m.from; mark.tabIndex=0; mark.setAttribute('data-issue',String(i));
+      frag.appendChild(mark); last=m.at+1;
+    });
+    frag.appendChild(document.createTextNode(raw.slice(last)));
+    article.textContent=''; article.appendChild(frag);
+  }
+  var count=document.getElementById('punctCount');
+  count.textContent=matches.length?'发现 '+matches.length+' 处疑似半角标点（已标黄）':'未发现常见中文半角标点问题';
+  var nextButton=document.getElementById('punctNext');
+  nextButton.disabled=!matches.length;
+  var nextIndex=0;
+  nextButton.addEventListener('click',function() {
+    var issue=article.querySelectorAll('.punct-issue')[nextIndex];
+    if(issue){issue.scrollIntoView({behavior:'smooth',block:'center'});issue.focus({preventScroll:true});}
+    nextIndex=(nextIndex+1)%matches.length;
+  });
+  if (slides.length) go(0);
+}());
+</script>
+</body></html>
