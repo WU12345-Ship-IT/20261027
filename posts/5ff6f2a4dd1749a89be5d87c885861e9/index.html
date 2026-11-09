@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>钓清波鱼：漂、线组、素饵与路亚饵的搭配参考</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+.layout{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:38px;padding:24px 30px 38px}
+.media{min-width:0;align-self:start;position:sticky;top:20px}.gallery{width:100%}.stage{position:relative;aspect-ratio:3/4;background:#e9eef1;overflow:hidden;border-radius:10px;max-height:calc(100vh - 116px);margin:0 auto}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.slide.is-active{display:flex}.slide img{height:100%;width:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.size-badge{position:absolute;z-index:3;top:10px;left:10px;background:#64748be8;color:#fff;border:2px solid white;border-radius:8px;text-align:center;padding:7px 10px;font-weight:700;font-size:16px;line-height:1.35;box-shadow:0 2px 8px #0002}.size-badge.ok{background:#21c776}.size-badge.warn{background:#ef8a27}.size-badge.error{background:#d94848}.size-badge .dim{display:block;font-weight:500;font-size:11px;margin-top:2px}.counter{position:absolute;top:15px;right:15px;background:#263746ad;color:#fff;font-size:13px;border-radius:20px;padding:6px 12px;z-index:2}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:#1e293ba8;color:#fff;width:40px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s}.nav:hover,.nav:focus-visible{background:#162231e3}.nav:focus-visible,.dot:focus-visible{outline:3px solid #0b83e6;outline-offset:2px}.prev{left:9px}.next{right:9px}
+.gallery-bottom{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 6px}.hint{font-size:12px;color:#7b8895}.dots{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.dot{height:7px;width:7px;border:0;border-radius:50%;padding:0;background:#cbd5df}.dot.is-active{width:21px;border-radius:8px;background:#1d9767}
+.copy{min-width:0;max-height:none;padding:12px 12px 40px 0}.category{font-size:13px;color:#24856d;margin:0 0 12px}.copy h1{font-size:clamp(24px,2.1vw,32px);line-height:1.4;margin:0 0 25px;font-weight:750;overflow-wrap:anywhere}.article{font-size:17px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:.1px}
+.punct-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 22px;background:#eef4f8;padding:10px 12px;border-radius:9px;font-size:13px}.punct-toolbar button{border:1px solid #bbcdd8;background:white;border-radius:6px;padding:6px 10px}.punct-issue{background:#fff0aa;color:#7a3500;border-bottom:2px solid #e08722;border-radius:2px;padding:0 1px}.punct-issue:focus{outline:2px solid #aa5500}.footer{color:#8b939c;font-size:12px;border-top:1px solid #e2e7ea;margin-top:36px;padding-top:16px}.empty-photo{aspect-ratio:3/4;background:#e9eef1;border-radius:10px;display:grid;place-items:center;color:#82919e}
+@media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
+</style></head><body>
+<main class="layout">
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-3fc64d8e110a.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-51134f9c1062.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-d4cfa97002f1.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-c88e4ba61d19.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>钓清波鱼：漂、线组、素饵与路亚饵的搭配参考</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">在一条底全是乱石的溪流段钓清波，我一开始按“保险思路”上了2.0主线配1.2子线，漂也选得偏大，结果流水一推，漂相又乱又虚，明明感觉有口却抓不住。后来把子线降到1.0，浮漂吃铅也调小，情况才慢慢清楚起来。那次之后我就明白，清波这套搭配真不能一套数据走到底，还是得看当天水情。下面这套思路，是我翻资料加自己试出来的整理，供同样钓清波的朋友参考。
+
+清波多活动于激流石缝与乱石底，浮漂须便于观察且在流水中保持稳定。
+短身巴尔杉木漂翻身快、具一定抗水流能力，可作为选择之一。
+七星漂调平水钓钝适用于浅滩缓流，普通吃铅0.8–1.2克小号浮漂亦足够，吃铅可随水流加急而增大。
+线组并非越粗越好，常规主线1.2–1.5号配子线0.8–1.0号，乱石密集强流水可升至2.0+1.2，个体偏大或磨线严重时可用3.0+1.5。
+鱼钩可选伊豆、金海夕、伊势尼等，核心为钩条强度足、钩门匹配且能抗乱石磨蹭。
+
+清波以植物性食物为主，鲜玉米粒为稳妥素饵，嫩玉米优于老玉米。
+红薯软饵在急流中存在局限，煮熟红薯在流速＞0.8米/秒的岩礁区几乎无响应。
+急流对饵料硬度与沉降速度要求更高，红薯饵更适合湾沱、缓流区或夜钓近岸。
+主攻流速较快石缝区时，可优先选用玉米粒、青苔或溪虫等更贴合急流环境的饵料。
+自制红薯饵可蒸熟红薯掺玉米面、麦麸与少量蜂蜜，使用时选择缓流标点并将饵团调得偏硬偏黏；急流中挂完整玉米粒并使钩尖微露更可靠。
+
+清波具有一定攻击性，路亚作钓可行。
+核心拟饵可围绕3–5克微铅亮片、2.5–3.5厘米小米诺及小型VIB配置。
+亮片与小米诺适合浅滩、急流滩点抛投，收线不宜过快，可带轻微停顿与抽动以模仿受伤小鱼。
+VIB适合水底乱石区探底搜索，通过底部振动与短暂悬停激发追咬。
+路亚关键在于泳姿节奏匹配当日流水状态，水急时收线稍慢并增加悬停，水缓时可适当加快搜索。
+本文仅作垂钓经验分享，不作效果保证。垂钓请遵守当地水域管理规定，保护水生资源。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+</main>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var counter = document.getElementById('counter');
+  var stage = document.getElementById('stage');
+  var current = 0;
+  function go(index) {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); slide.setAttribute('aria-hidden', String(i !== current)); });
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+    if (counter) counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+  if (slides.length) document.getElementById('prev').addEventListener('click', function () { go(current - 1); });
+  if (slides.length) document.getElementById('next').addEventListener('click', function () { go(current + 1); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { go(i); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(current - 1); if (e.key === 'ArrowRight') go(current + 1); });
+  var startX = null, startY = null;
+  if (stage) stage.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; } }, {passive:true});
+  if (stage) stage.addEventListener('touchend', function (e) { if (startX === null || !e.changedTouches.length) return; var dx=e.changedTouches[0].clientX-startX, dy=e.changedTouches[0].clientY-startY; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.25) go(current+(dx<0?1:-1)); startX=null; startY=null; }, {passive:true});
+  // Real pixel dimensions are obtained from each loaded image, not a fixed label.
+  slides.forEach(function(slide) {
+    var img = slide.querySelector('img');
+    var badge = slide.querySelector('.size-badge');
+    function inspect() {
+      var w=img.naturalWidth, h=img.naturalHeight;
+      if (!w || !h) { badge.className='size-badge error'; badge.textContent='图片读取失败'; return; }
+      var exact=(w===1086 && h===1448);
+      var ratio=(w*4===h*3);
+      badge.className='size-badge '+(exact?'ok':ratio?'warn':'error');
+      badge.textContent=ratio?'3:4':'非3:4';
+      var detail=document.createElement('span'); detail.className='dim';
+      detail.textContent=w+' × '+h+(exact?' · 标准尺寸':ratio?' · 比例正确，尺寸非1086×1448':' · 比例不符');
+      badge.appendChild(detail);
+    }
+    if (img.complete && img.naturalWidth) inspect();
+    img.addEventListener('load',inspect,{once:true}); img.addEventListener('error',inspect,{once:true});
+  });
+  // Heuristic detection: only ASCII punctuation near Chinese writing. No automatic edits.
+  var article=document.getElementById('article');
+  var raw=article.textContent || '';
+  var matches=[];
+  var chinese=/[\u3400-\u9fff]/;
+  var fullMap={',':'，','.':'。',':':'：',';':'；','?':'？','!':'！','(':'（',')':'）'};
+  for(var k=0;k<raw.length;k++) {
+    var ch=raw[k], before=raw[k-1]||'', after=raw[k+1]||'';
+    if(!Object.prototype.hasOwnProperty.call(fullMap,ch)) continue;
+    // Skip numbers, decimals, obvious URLs, Latin abbreviations and file suffixes.
+    if(/[0-9A-Za-z]/.test(before) && /[0-9A-Za-z]/.test(after)) continue;
+    if(/[0-9]/.test(before) && /[0-9]/.test(after)) continue;
+    var nearby=raw.slice(Math.max(0,k-7),Math.min(raw.length,k+8));
+    if(!chinese.test(nearby)) continue;
+    if(ch==='.' && /[A-Za-z0-9]/.test(after)) continue;
+    if(ch===':' && after==='/' && raw[k+2]==='/') continue;
+    matches.push({at:k,from:ch,to:fullMap[ch]});
+  }
+  if(matches.length) {
+    var frag=document.createDocumentFragment(),last=0;
+    matches.forEach(function(m,i) {
+      frag.appendChild(document.createTextNode(raw.slice(last,m.at)));
+      var mark=document.createElement('mark');mark.className='punct-issue';
+      mark.title='半角 '+m.from+'，建议检查是否改为 '+m.to;
+      mark.textContent=m.from; mark.tabIndex=0; mark.setAttribute('data-issue',String(i));
+      frag.appendChild(mark); last=m.at+1;
+    });
+    frag.appendChild(document.createTextNode(raw.slice(last)));
+    article.textContent=''; article.appendChild(frag);
+  }
+  var count=document.getElementById('punctCount');
+  count.textContent=matches.length?'发现 '+matches.length+' 处疑似半角标点（已标黄）':'未发现常见中文半角标点问题';
+  var nextButton=document.getElementById('punctNext');
+  nextButton.disabled=!matches.length;
+  var nextIndex=0;
+  nextButton.addEventListener('click',function() {
+    var issue=article.querySelectorAll('.punct-issue')[nextIndex];
+    if(issue){issue.scrollIntoView({behavior:'smooth',block:'center'});issue.focus({preventScroll:true});}
+    nextIndex=(nextIndex+1)%matches.length;
+  });
+  if (slides.length) go(0);
+}());
+</script>
+</body></html>
