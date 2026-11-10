@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>晾的咸鱼如何保存</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+.layout{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:38px;padding:24px 30px 38px}
+.media{min-width:0;align-self:start;position:sticky;top:20px}.gallery{width:100%}.stage{position:relative;aspect-ratio:3/4;background:#e9eef1;overflow:hidden;border-radius:10px;max-height:calc(100vh - 116px);margin:0 auto}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.slide.is-active{display:flex}.slide img{height:100%;width:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.size-badge{position:absolute;z-index:3;top:10px;left:10px;background:#64748be8;color:#fff;border:2px solid white;border-radius:8px;text-align:center;padding:7px 10px;font-weight:700;font-size:16px;line-height:1.35;box-shadow:0 2px 8px #0002}.size-badge.ok{background:#21c776}.size-badge.warn{background:#ef8a27}.size-badge.error{background:#d94848}.size-badge .dim{display:block;font-weight:500;font-size:11px;margin-top:2px}.counter{position:absolute;top:15px;right:15px;background:#263746ad;color:#fff;font-size:13px;border-radius:20px;padding:6px 12px;z-index:2}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;border:0;background:#1e293ba8;color:#fff;width:40px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s}.nav:hover,.nav:focus-visible{background:#162231e3}.nav:focus-visible,.dot:focus-visible{outline:3px solid #0b83e6;outline-offset:2px}.prev{left:9px}.next{right:9px}
+.gallery-bottom{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:12px 6px}.hint{font-size:12px;color:#7b8895}.dots{display:flex;gap:7px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.dot{height:7px;width:7px;border:0;border-radius:50%;padding:0;background:#cbd5df}.dot.is-active{width:21px;border-radius:8px;background:#1d9767}
+.copy{min-width:0;max-height:none;padding:12px 12px 40px 0}.category{font-size:13px;color:#24856d;margin:0 0 12px}.copy h1{font-size:clamp(24px,2.1vw,32px);line-height:1.4;margin:0 0 25px;font-weight:750;overflow-wrap:anywhere}.article{font-size:17px;line-height:1.95;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:.1px}
+.punct-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 22px;background:#eef4f8;padding:10px 12px;border-radius:9px;font-size:13px}.punct-toolbar button{border:1px solid #bbcdd8;background:white;border-radius:6px;padding:6px 10px}.punct-issue{background:#fff0aa;color:#7a3500;border-bottom:2px solid #e08722;border-radius:2px;padding:0 1px}.punct-issue:focus{outline:2px solid #aa5500}.footer{color:#8b939c;font-size:12px;border-top:1px solid #e2e7ea;margin-top:36px;padding-top:16px}.empty-photo{aspect-ratio:3/4;background:#e9eef1;border-radius:10px;display:grid;place-items:center;color:#82919e}
+@media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
+</style></head><body>
+<main class="layout">
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-9a855dce4a7f.jpeg" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-49b0d31176bb.jpeg" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-092cb9036706.jpeg" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-4ced94d9b6df.jpeg" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>晾的咸鱼如何保存</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">咸鱼晒好了，存不对照样白忙一场
+
+去年冬天晒了一批咸鱼，收的时候觉得干透了，随手装在塑料袋里塞进橱柜。过了大概一个月拿出来，表面黏了一层，闻着也不对了。后来才慢慢摸清楚，晾干只是第一步，存的方式不对，前面晒的功夫等于白费。
+
+长期存放，分装冷冻比整条塞进去更稳妥
+
+晒好的咸鱼如果一时吃不完，冷冻是保存时间最长的方式。关键不是“冻起来”这三个字，而是冻之前先分装：按一顿的量切成小块，用保鲜袋分别装好、挤出空气，再放进冷冻室。这样每次只拿一袋，不会因为反复解冻整条鱼而导致变味变质。整条直接冷冻当然也能存，但解冻一次吃不完再冻回去，口感和风味都会打折扣。另外，咸鱼不要裸着放进冷冻室，盐分随水分蒸发附着在冷凝管上，对冰箱本身也不友好，套一层密封袋再冻更合适。
+
+冷藏适合短期内吃完的量，常温保存则要把“防潮”放在第一位
+
+如果一两周内能吃完，冷藏就够了，密封袋包好放进冷藏室，随吃随取。没有冰箱或者想短期在室温下放，重点全在防潮：咸鱼受潮后含水量上升，微生物容易繁殖，发霉变质往往就是从这一步开始的。可以找一个密封罐，在咸鱼表面撒一些花椒、生姜或丁香，或者把剥开的大蒜瓣铺在罐底，再把咸鱼放进去、盖紧，放在阴凉通风的地方。真空包装的情况下，常温可以放半年左右，但前提是包装不破损，一旦漏气就不该再按常温来算。
+
+出现哈喇味、暗黄色或者黏滑表面，就不要继续吃了
+
+咸鱼存放过程中最需要警惕的不是“过期了没有”，而是它的状态变了没有。表面出现暗黄色、闻起来有哈喇味，说明油脂已经氧化，不适合再食用。黏滑表面、霉斑或者刺鼻的腥臭味，同样是变质的明确信号。冷冻虽然能延长保存时间，但也不是无限的，一般建议在三个月内吃完，存放超过半年就需要更加谨慎地判断状态。我现在收咸鱼的时候会顺手分成小袋，吃多少拿多少，橱柜里那罐撒了花椒的也定期看一眼。存对了，晒的那批鱼才算真正进了厨房。
+
+ 本文基于公开的食品保存资料和生活经验整理，仅代表个人理解，不构成食品安全或储存操作建议。不同环境温湿度、咸鱼干制程度和包装方式会影响实际保存效果，请结合实际情况判断，如有疑虑以感官判断和食品安全常识为准。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+</main>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var counter = document.getElementById('counter');
+  var stage = document.getElementById('stage');
+  var current = 0;
+  function go(index) {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach(function (slide, i) { slide.classList.toggle('is-active', i === current); slide.setAttribute('aria-hidden', String(i !== current)); });
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === current); if (i === current) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+    if (counter) counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+  if (slides.length) document.getElementById('prev').addEventListener('click', function () { go(current - 1); });
+  if (slides.length) document.getElementById('next').addEventListener('click', function () { go(current + 1); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { go(i); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(current - 1); if (e.key === 'ArrowRight') go(current + 1); });
+  var startX = null, startY = null;
+  if (stage) stage.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; } }, {passive:true});
+  if (stage) stage.addEventListener('touchend', function (e) { if (startX === null || !e.changedTouches.length) return; var dx=e.changedTouches[0].clientX-startX, dy=e.changedTouches[0].clientY-startY; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.25) go(current+(dx<0?1:-1)); startX=null; startY=null; }, {passive:true});
+  // Real pixel dimensions are obtained from each loaded image, not a fixed label.
+  slides.forEach(function(slide) {
+    var img = slide.querySelector('img');
+    var badge = slide.querySelector('.size-badge');
+    function inspect() {
+      var w=img.naturalWidth, h=img.naturalHeight;
+      if (!w || !h) { badge.className='size-badge error'; badge.textContent='图片读取失败'; return; }
+      var exact=(w===1086 && h===1448);
+      var ratio=(w*4===h*3);
+      badge.className='size-badge '+(exact?'ok':ratio?'warn':'error');
+      badge.textContent=ratio?'3:4':'非3:4';
+      var detail=document.createElement('span'); detail.className='dim';
+      detail.textContent=w+' × '+h+(exact?' · 标准尺寸':ratio?' · 比例正确，尺寸非1086×1448':' · 比例不符');
+      badge.appendChild(detail);
+    }
+    if (img.complete && img.naturalWidth) inspect();
+    img.addEventListener('load',inspect,{once:true}); img.addEventListener('error',inspect,{once:true});
+  });
+  // Heuristic detection: only ASCII punctuation near Chinese writing. No automatic edits.
+  var article=document.getElementById('article');
+  var raw=article.textContent || '';
+  var matches=[];
+  var chinese=/[\u3400-\u9fff]/;
+  var fullMap={',':'，','.':'。',':':'：',';':'；','?':'？','!':'！','(':'（',')':'）'};
+  for(var k=0;k<raw.length;k++) {
+    var ch=raw[k], before=raw[k-1]||'', after=raw[k+1]||'';
+    if(!Object.prototype.hasOwnProperty.call(fullMap,ch)) continue;
+    // Skip numbers, decimals, obvious URLs, Latin abbreviations and file suffixes.
+    if(/[0-9A-Za-z]/.test(before) && /[0-9A-Za-z]/.test(after)) continue;
+    if(/[0-9]/.test(before) && /[0-9]/.test(after)) continue;
+    var nearby=raw.slice(Math.max(0,k-7),Math.min(raw.length,k+8));
+    if(!chinese.test(nearby)) continue;
+    if(ch==='.' && /[A-Za-z0-9]/.test(after)) continue;
+    if(ch===':' && after==='/' && raw[k+2]==='/') continue;
+    matches.push({at:k,from:ch,to:fullMap[ch]});
+  }
+  if(matches.length) {
+    var frag=document.createDocumentFragment(),last=0;
+    matches.forEach(function(m,i) {
+      frag.appendChild(document.createTextNode(raw.slice(last,m.at)));
+      var mark=document.createElement('mark');mark.className='punct-issue';
+      mark.title='半角 '+m.from+'，建议检查是否改为 '+m.to;
+      mark.textContent=m.from; mark.tabIndex=0; mark.setAttribute('data-issue',String(i));
+      frag.appendChild(mark); last=m.at+1;
+    });
+    frag.appendChild(document.createTextNode(raw.slice(last)));
+    article.textContent=''; article.appendChild(frag);
+  }
+  var count=document.getElementById('punctCount');
+  count.textContent=matches.length?'发现 '+matches.length+' 处疑似半角标点（已标黄）':'未发现常见中文半角标点问题';
+  var nextButton=document.getElementById('punctNext');
+  nextButton.disabled=!matches.length;
+  var nextIndex=0;
+  nextButton.addEventListener('click',function() {
+    var issue=article.querySelectorAll('.punct-issue')[nextIndex];
+    if(issue){issue.scrollIntoView({behavior:'smooth',block:'center'});issue.focus({preventScroll:true});}
+    nextIndex=(nextIndex+1)%matches.length;
+  });
+  if (slides.length) go(0);
+}());
+</script>
+</body></html>
