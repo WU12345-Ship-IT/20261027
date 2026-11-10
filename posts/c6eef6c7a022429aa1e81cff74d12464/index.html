@@ -17,18 +17,38 @@
 @media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
 </style></head><body>
 <main class="layout">
-<section class="media" aria-label="配图"><div class="empty-photo">本篇暂无图片</div></section>
-<section class="copy" aria-label="文章内容"><h1>魔方打乱不会还原？｜记住这4步回正顺序，新手也能拼回六面</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">我以前以为魔方还原靠天赋，直到照着标准流程拼了一次，原来不是背一百个公式，是先搞清回正顺序。新手不用怕，只要认识最基础的符号就行：U上、D下、L左、R右、F前、B后，字母代表顺时针90度，带撇代表逆时针。
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-e4764f93413d.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-bf7656b04746.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-0736f713ecc9.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-cdb8060a0f31.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>魔方打乱不会还原？｜记住这4步回正顺序，新手也能拼回六面</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">我以前以为魔方还原靠天赋，直到照着标准流程拼了一次，才恍然大悟：魔方根本不是靠智商，而是背一百多个公式的体力活。不过对于新手来说，一开始完全不用去死记硬背那些长串的字母，你只需要先搞清最基本的“回正顺序”，再配合最基础的几个公式，新手也能在两分钟内拼回六面。
+
+动手之前，先认清最基础的转动符号，这是看懂教程的扫盲第一步。魔方有六个面，U代表上层，D代表下层，L代表左边，R代表右边，F代表前面，B代表后面。单纯一个字母，比如R，代表顺时针转90度；如果带一撇（R&#39;），就是逆时针转90度；如果带个数字2（R2），就是转180度。听懂了这个，咱们再往下走。
 
 自底向上的回正顺序分四步：
-1、做底层十字。先对中心色，把白棱块转到顶层再归位，拼出白色十字。
-2、拼底层角块。找带白色的角块，放到对应位置上方，用小循环归位。
-3、还原中层棱块。把不含黄色的棱块插到中间层，上层往哪边空，就往反方向塞。
-4、顶层收尾。先拼顶层十字，再翻角块颜色，最后调棱块位置，公式收尾六面就齐了。
+1、做底层十字。先找准白色中心块，把带有白色的四个棱块转到顶层，再一个个翻到底部，拼出一个白色的十字。注意，这时候不仅要白色对齐，侧面的颜色也要和侧边中心块的颜色一致。
+2、拼底层角块。找那种带有白色，并且另外两面也有颜色的角块。把它转到对应位置的顶层上方，然后反复用“右边下、顶层左、右边上、顶层右”的小循环，把它塞进底层的角落里。
+3、还原中层棱块。这一步要把中间层不带黄色的四个棱块归位。判断方法很简单：看棱块顶面的颜色，它要去哪边，你就把顶层往哪边转，然后往反方向把它塞进去。
+4、顶层收尾。这是最后一步，先拼顶层黄色十字，再翻角块颜色（也就是大家常说的小鱼公式），最后调整顶层角块和棱块的位置，六面就彻底复原了。
 
-新手别贪快，先求能还原再练速度。公式记不住就贴张便利贴在桌上，每天拼两遍，一周后手感就来了。稳定两分钟内还原后，再去学CFOP。
+新手千万别贪快，先求“能还原”，再去练速度。一开始公式肯定记不住，建议找张便利贴把基础公式抄下来贴在桌子前面，忘了就抬头看一眼，不丢人。每天坚持拼两遍，大概一周左右，你的手就会形成肌肉记忆，不用过脑子自己就会转了。
 
-魔方不是智力题，是肌肉记忆题，按自己顺手的流派来就行。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+等你能稳定在两分钟内还原，再去学高级的CFOP玩法。魔方不是智力题，是肌肉记忆题，顺序对了，手比脑子快。
+
+魔方还原顺序有多种流派，公式也各有不同，按自己顺手的来就行。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
 </main>
 <script>
 (function () {
