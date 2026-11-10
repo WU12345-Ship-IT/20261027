@@ -17,24 +17,57 @@
 @media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
 </style></head><body>
 <main class="layout">
-<section class="media" aria-label="配图"><div class="empty-photo">本篇暂无图片</div></section>
-<section class="copy" aria-label="文章内容"><h1>PPT插不进图片？别急着重装，按顺序查这6个地方</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">昨天做汇报，正准备给幻灯片配图，结果点“插入图片”按钮是灰色的，直接把图片拖进去也完全没反应。我一度以为软件崩溃了，差点卸载重装。后来冷静下来挨个排查，两分钟就修好了。其实问题根本不在PPT本身，而是藏在几个容易被忽略的隐藏设置里。遇到这种情况，千万别急着重装，按下面这6步顺序查，基本都能秒解。
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-ae215a08c796.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-93e2f0bf45e0.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-7bbf8232f3ad.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-13a811290f1b.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
 
-1、查图片格式。老版本的Office对部分新型图片编码支持不好，比如TIFF或者某些WebP格式。如果你拖进去没反应，先用画图工具把图片另存为最基础的JPG或PNG格式，再往里面插，这是最稳妥的排查第一步。
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>PPT插不进图片？别急着重装，按顺序查这6个地方</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">做汇报时，碰到“插入图片”按钮灰色、拖图没反应，或者插入后看不见，确实容易着急。但这几种现象，原因可能完全不同。先别急着卸载重装。下面按 Windows 版 PowerPoint 的常见情况，整理了6个排查方向，找到符合自己症状的那一步再操作。
 
-2、查视图模式。有时候图片其实已经插进去了，只是你看不见。看看软件底部状态栏，如果当前处于“草稿视图”或者“大纲视图”，图片是不会显示出来的。直接去“视图”选项卡，切换到“打印布局”就能恢复正常。
+1、按钮灰色，先查编辑权限
+先看看文件上方有没有“受保护的视图”提示。如果确认文件来源可信，可以点击“启用编辑”，再尝试插图。
+如果是别人共享的演示文稿，也要确认自己拥有编辑权限。只有查看权限时，需要向文件所有者申请编辑权限。如果新建文件也无法编辑，再检查“文件 → 账户”里是否有未激活或许可证异常提示。
 
-3、查显示占位符。去文件选项里找高级设置，在显示文档内容的区域，看看“显示图片占位符”是不是被勾选了，如果是，把它取消掉，同时勾选“显示绘图层”。
+2、某张图插不进去，先查图片文件
+先用系统自带的看图工具打开图片，确认它能正常显示。
+如果可以打开，再用画图等工具重新另存为 JPG 或 PNG，然后通过“插入 → 图片 → 此设备”选择新文件。注意，重新导出才是转换格式，直接把文件名后缀改成 .jpg 并不算。
+也可以换一张已知正常的图片测试，帮助判断是不是原图本身的问题。
 
-4、查隐私设置。如果你是想插入“联机图片”发现按钮灰掉，那是隐私设置拦住了。去文件-选项-信任中心-隐私设置里，把“所有连接体验”打开，然后重启Office即可。
+3、已经插入却看不见，查视图和遮挡
+切换到“视图 → 普通”，在幻灯片画布上查看。
+再打开“开始 → 排列 → 选择窗格”，看看有没有刚插入的图片对象。如果有，检查它是否被隐藏，或者被其他形状遮住；必要时恢复显示、调整前后顺序，再检查图片的位置和大小。
+这一步处理的是“图片已经在里面，却没有显示出来”的情况。
 
-5、查兼容模式。看看你的文件标题栏，如果写着“兼容模式”，那是老版本格式（比如.doc或.ppt）锁住了新功能。去文件-信息里点一下“转换”，把它升级成新版格式就好了。
+4、只有联机图片不可用，查网络与连接体验
+如果本地图片能插入，只有“联机图片”打不开或不可用，先检查网络，再检查 Office 的连接体验设置。
+部分版本可在“文件 → 账户 → 账户隐私 → 管理设置”中查看相关选项。根据需要检查允许下载联机内容的连接体验，不必把所有隐私选项都打开。
+工作或学校账号可能受管理员策略控制，无法自行修改时，联系管理员。赶时间可以先使用本地图片。
 
-6、查插件冲突。如果以上都没问题，按住Ctrl键再双击启动软件，这时候会进入安全模式。如果在安全模式下能正常插图，说明是你装的某个插件在捣乱，去COM加载项里把可疑的插件禁用即可。
+5、只有这个PPT出问题，查文件与旧格式
+如果文件是旧的 .ppt 格式，可以先备份，再另存为 .pptx 副本测试。
+但看到“兼容模式”，不代表普通图片一定不能插入。更有用的对照方法是：新建一个空白演示文稿，插入同一张图片。
+如果新文件正常，排查重点就放在原演示文稿上。可以在副本中逐页复制内容，并测试哪一页开始出现异常。
 
-插不进图，八成是设置问题而不是软件bug。按格式、视图、隐私、兼容、插件这个顺序查下来，基本都能迎刃而解。
+6、多个文件都异常，再排查加载项
+先保存文件并退出 PowerPoint。按 Win + R，输入：powerpnt /safe，回车后会以安全模式启动 PowerPoint，再测试能否正常插图。如果安全模式下恢复正常，加载项等启动环境因素就值得进一步排查。正常启动软件后，进入“文件 → 选项 → 加载项”，在底部选择“COM 加载项”，点击“转到”，逐个取消勾选并重启测试，定位有问题的项目。安全模式能正常使用，只是排查线索，不能直接断定一定是某个插件。
 
-Office版本不同界面略有差异，按自己版本对应查找。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+最后记住：按钮灰色，先看权限；单张图失败，先查图片；插入后看不见，查隐藏和遮挡；只有联机功能异常，再看网络与连接体验。
+
+如果这些步骤仍没解决，再尝试更新或修复 Office。
+
+以上以 Windows 桌面版 PowerPoint 为例，不同版本的菜单名称和位置可能略有差异。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
 </main>
 <script>
 (function () {
