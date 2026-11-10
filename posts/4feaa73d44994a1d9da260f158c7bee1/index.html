@@ -17,17 +17,35 @@
 @media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
 </style></head><body>
 <main class="layout">
-<section class="media" aria-label="配图"><div class="empty-photo">本篇暂无图片</div></section>
-<section class="copy" aria-label="文章内容"><h1>Ubuntu查不到显卡？新手必看的3条命令，照着敲马上出结果</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">第一次在服务器上跑模型，敲了nvidia-smi报command not found，我还以为显卡坏了。后来才知道Ubuntu查GPU就那几条命令，敲对马上出结果。很多新手遇到这情况容易慌，其实只要按顺序排查硬件和驱动就行。
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 4 张"><img src="images/01-19ccc412fdfe.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 4 张"><img src="images/02-5ca718ad1291.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 4 张"><img src="images/03-5e4c0f3544fe.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 4 张"><img src="images/04-4feab26e85ab.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
 
-先用lspci确认硬件认没认到。输入lspci | grep -i nvidia，有输出就说明认到了，会显示显卡型号，AMD卡把nvidia换成amd。接着查N卡状态敲nvidia-smi，如果没装驱动会报错，先执行apt安装nvidia-driver，装好再敲，型号、显存、CUDA版本全出来，想实时刷新就加个-l 1。查CUDA版本用nvcc --version，对得上就没问题。
+    <div class="counter" id="counter">1 / 4</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>Ubuntu查不到显卡？新手必看的3条命令，照着敲马上出结果</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">第一次在服务器上跑模型，敲了nvidia-smi报command not found，我还以为显卡坏了。后来才知道Ubuntu查GPU就那几条命令，敲对马上出结果。很多新手遇到这情况容易慌，其实只要按顺序排查硬件、驱动和状态，逻辑非常清晰。
+
+第一步，先确认系统认没认到硬件。输入lspci | grep -i nvidia，如果有输出就是认到了，会显示RTX 3090等具体型号。如果是AMD卡，把nvidia换成amd；集显换成vga。第二步，查N卡专用状态敲nvidia-smi。如果没装驱动会直接报错，先执行sudo apt install nvidia-driver-535装好。装完再敲，型号、显存、CUDA版本、占用进程全出来，想实时刷新就加个-l 1参数。第三步，查CUDA版本，用nvcc --version或者看nvidia-smi右上角的字段，两个对得上就没问题。
 
 如果驱动加载异常报了failed，按这三步处理：
-1、运行sudo modprobe nvidia重新加载。
-2、不行就用apt重装驱动。
-3、看dmesg日志排查硬件错误。
+1、运行sudo modprobe nvidia重新加载内核模块。
+2、不行就用apt重装驱动，或者去官网下包。
+3、看dmesg日志排查是不是硬件报错。
 
-AMD卡查状态用rocminfo，集显用glxinfo。日常监控建议装个gpustat，终端里看占用比原生命令清爽得多。查GPU不是玄学，先认硬件再看状态，缺驱动就装，报错就看日志，基本都能解决。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+AMD卡查状态用rocminfo，集显用glxinfo | grep -i renderer。日常监控建议装个gpustat，敲gpustat -i 1在终端里看占用，比原生命令清爽得多。查GPU不是玄学，先认硬件再看状态，缺驱动就装，报错就看日志，三步闭环。
+
+命令结果随系统和驱动版本不同会有差异，操作前先备份好环境。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
 </main>
 <script>
 (function () {
