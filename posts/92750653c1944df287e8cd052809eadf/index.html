@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
-<title>什么柚子好吃？按口味挑不踩雷，记住这4个品种</title>
+<title>什么柚子好吃？按口味挑这4种</title>
 <style>
 :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;color:#202a36;background:#f4f6f8}
 *{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
@@ -17,18 +17,47 @@
 @media(max-width:800px){.layout{display:block;padding:0;background:#fff}.media{position:static;padding:0}.stage{border-radius:0;max-height:none;aspect-ratio:3/4}.nav{width:34px;height:44px;font-size:23px}.gallery-bottom{padding:11px 16px}.hint{font-size:11px}.copy{padding:12px 20px 32px}.copy h1{font-size:24px;margin-bottom:18px}.article{font-size:16px;line-height:1.88}.footer{margin-top:25px}}
 </style></head><body>
 <main class="layout">
-<section class="media" aria-label="配图"><div class="empty-photo">本篇暂无图片</div></section>
-<section class="copy" aria-label="文章内容"><h1>什么柚子好吃？按口味挑不踩雷，记住这4个品种</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">昨天在水果店对着一堆柚子发了半天呆，生怕买回去又酸又干。其实挑柚子不用纠结，全看你想吃哪种口感。我把市面常见的几个品种按口味分好了，照着买准没错。
+<section class="media" aria-label="配图"><div class="gallery" id="gallery" aria-label="图文图片轮播" aria-roledescription="轮播图">
+  <div class="stage" id="stage">
+    <div class="slide is-active" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 6 张"><img src="images/01-b665c01c955e.png" alt="第 1 张图文图片" loading="eager" fetchpriority="high" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 6 张"><img src="images/02-3d27ad279442.png" alt="第 2 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 6 张"><img src="images/03-e2f976967616.png" alt="第 3 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 6 张"><img src="images/04-505df5adecbe.png" alt="第 4 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 5 张，共 6 张"><img src="images/05-5598ee4238bc.png" alt="第 5 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
+<div class="slide" role="group" aria-roledescription="幻灯片" aria-label="第 6 张，共 6 张"><img src="images/06-e611763e0371.png" alt="第 6 张图文图片" loading="lazy" draggable="false"><div class="size-badge" aria-live="polite">检测中…</div></div>
 
-市面上常见的柚子，口感差别其实挺大的，你要分清自己想吃什么味道：
-1、偏爱爆汁酸甜，选琯溪蜜柚。这是市面上最常见的，果肉颗粒饱满，汁水充足，酸甜平衡不会寡淡。它分白心、红心和三红，其中三红蜜柚风味更浓，甜度更高一点。皮薄籽少，剥起来省力，适合大多数家庭日常吃。
-2、喜欢纯甜无酸，选广西沙田柚。它是典型的纯甜口，果肉紧实，自带醇厚的柚香。外形大多呈葫芦状，底部带有标志性的印圈。沙田柚皮厚籽多，但非常耐存放。刚摘下时口感一般，放一段时间“回糖”之后，甜度会直线上升，适合偏爱清甜口感的人。
-3、追求细嫩清香，选文旦柚。比如玉环文旦或度尾文旦柚，果肉细腻软糯，酸味极淡，香气清雅绵长。它的果皮薄、筋膜少，剥取果肉很方便。整体口感柔和，老人和孩子接受度很高。
-4、喜欢清爽微苦，选西柚。西柚也就是葡萄柚，酸甜之外带点淡淡的苦味，汁水充沛。它的糖分偏低，适合搭配沙拉、榨汁，或者喜欢清爽刺激口感的人群，不太适合完全吃不了酸苦味的人。
+    <div class="counter" id="counter">1 / 6</div>
+    <button type="button" class="nav prev" id="prev" aria-label="上一张图片">&#10094;</button>
+    <button type="button" class="nav next" id="next" aria-label="下一张图片">&#10095;</button>
+  </div>
+  <div class="gallery-bottom"><span class="hint">点击箭头或左右滑动切换图片</span><div class="dots" id="dots"><button type="button" class="dot is-active" data-slide="0" aria-label="查看第 1 张图片" aria-current="true"></button>
+<button type="button" class="dot" data-slide="1" aria-label="查看第 2 张图片"></button>
+<button type="button" class="dot" data-slide="2" aria-label="查看第 3 张图片"></button>
+<button type="button" class="dot" data-slide="3" aria-label="查看第 4 张图片"></button>
+<button type="button" class="dot" data-slide="4" aria-label="查看第 5 张图片"></button>
+<button type="button" class="dot" data-slide="5" aria-label="查看第 6 张图片"></button>
+</div></div>
+</div></section>
+<section class="copy" aria-label="文章内容"><h1>什么柚子好吃？按口味挑这4种</h1><div class="punct-toolbar"><span id="punctCount">正在检测正文标点…</span><button type="button" id="punctNext">定位下一处</button><span title="仅标记常见中文语境中的半角标点，不会改动原文">只读审核 · 不修改原文</span></div><article class="article" id="article">前两天去水果店，柚子已经堆成了小山。有的圆，有的像葫芦，切开还有白心和红心。挑柚子时，我现在会先想自己想吃什么味道，再看个头和果皮。爱酸甜、偏爱甜口、想吃细嫩清香，或者喜欢一点苦味，对应的选择都不一样。
 
-买的时候记住两个小诀窍：第一，同等大小掂一下重量，越重说明水分越足；第二，看表皮，选细腻有光泽的，不要选发皱发软的。另外闻一下底部，有自然清香的最好。柚子买回家别急着吃，放几天等水分稍微蒸发一点，糖分沉淀了会更甜。
+1、酸甜多汁，选琯溪蜜柚
+琯溪蜜柚果肉颗粒饱满，汁水足，吃起来有甜也有酸。市面上能看到白心、红心和三红等类型。喜欢酸甜口，可以先从白心试起，同一类型的甜度也会随成熟度和批次变化。
 
-水果口感受产地、成熟度和存放时间的影响，大家按自己的口味喜好来挑选就好。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
+2、偏爱甜口，选沙田柚
+广西容县的沙田柚以清甜和柚香见长，果肉紧实。整果常呈梨形或葫芦形，果底有时能看到一圈印纹，俗称“金钱底”。沙田柚比较耐存放，喜欢甜味更突出的，可以优先挑它。
+
+3、细嫩清香，选文旦柚
+以浙江玉环文旦为例，果肉细嫩、清香多汁，酸甜柔和，剥开直接吃就很好。买的时候可以看看产地和品种标签。配图展示了文旦柚的整果和剥开的果肉。
+
+4.、酸甜微苦，选西柚
+西柚也叫葡萄柚，汁水足，酸甜里带一点苦味。喜欢清爽口感，可以搭配沙拉或榨汁。平时怕苦，可以先买一个试试。
+
+买柚子，先掂再看
+掂重量。 同一品种、大小相近的两个柚子，优先选手感沉的。
+看果皮。 选表皮完整、手感结实的，避开明显发皱、发软或有破损的。
+闻果底。 有自然果香可以作为参考，再结合重量和表皮一起判断。
+
+买回家可以先开一个尝尝。柚子放久了会失水，风味也可能变化。想挑到合口味的，买时先看品种和成熟度。</article><footer class="footer">图文素材分享页 · 可通过浏览器直接查看</footer></section>
 </main>
 <script>
 (function () {
